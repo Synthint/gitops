@@ -1,0 +1,1 @@
+helm upgrade --install connect 1password/connect --set-file connect.credentials=1password-credentials.json --set operator.create=true --set operator.token.value=<OP_CONNECT_TOKEN> --namespace connect --create-namespace

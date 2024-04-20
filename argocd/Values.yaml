@@ -1,0 +1,12 @@
+# Settings for ArgoCD
+argo-cd:
+  configs:
+    params:
+      server.insecure: true
+    repositories:
+      gitops-repo:
+        type: git
+        url: git@github.com:Synthint/gitops.git
+  server:
+    service:
+      type: ClusterIP

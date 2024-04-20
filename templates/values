@@ -1,0 +1,10 @@
+# Infrastrcutre apps of apps
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: git@github.com:tona1337/gitops.git
+    targetRevision: HEAD
+onePass:
+  targetRevision: 1.14.0
